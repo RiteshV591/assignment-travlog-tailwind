@@ -3,21 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
 
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body class="font-poppins font-light">
-    <header class="px-12 h-screen flex flex-col items-center">
-      <nav class="flex justify-between items-center h-28 w-full px-20 z-50">
+  <body class="font-poppins font-light px-10">
+    <header class="h-screen flex flex-col items-center">
+      <nav class="flex justify-between items-center h-24 w-full px-20 z-50">
         <a href="#">
           <img src="../resources/logo.svg" class="h-10 transition-all" />
         </a>
-        <div class="flex items-center list-none gap-10 cursor-pointer">
+        <div
+          class="transition delay-75 flex items-center list-none gap-10 cursor-pointer text-slate-700"
+        >
           <a href="#" class="font-semibold">Home</a>
           <a href="#" class="hover:font-semibold">About</a>
           <a href="#" class="hover:font-semibold">Destinations</a>
@@ -28,35 +36,41 @@
         <div class="flex items-start gap-1 transition-all duration-100">
           <a
             href="#"
-            class="transition delay-75 font-semibold text-black py-3 px-7 rounded-[98px] hover:bg-pink-400 hover:text-white hover:drop-shadow-2xl active:bg-pink-800 active:drop-shadow-xl"
+            class="transition delay-75 font-semibold text-slate-800 text-sm py-3 px-6 rounded-full hover:bg-pink-400 hover:text-white hover:drop-shadow-2xl active:bg-pink-800 active:drop-shadow-xl"
             >Log In</a
           >
           <a
             href="#"
-            class="transition-all bg-violet-700 drop-shadow-2xl font-semibold text-white py-3 px-7 rounded-full hover:bg-violet-500 active:bg-violet-800 active:drop-shadow-xl"
+            class="transition-all bg-indigo-700 drop-shadow-2xl text-sm font-semibold text-white py-3 px-6 rounded-full hover:bg-indigo-500 active:bg-indigo-800 active:drop-shadow-xl"
             >Sign Up</a
           >
         </div>
       </nav>
 
+      <!-- Header section containing Main heading and hero image -->
+
       <div
-        class="flex-1 max-w-screen-xl grid grid-cols-2 justify-items-center items-center justify-center content-center gap-x-12"
+        class="flex-1 grid grid-cols-2 items-center justify-center content-center gap-x-12"
       >
-        <img
+        <!-- <img
           class="absolute w-[700px] h-[610px]"
           src="../resources/blur-rectangle-bg.svg"
           alt="blur-rectangle"
-        />
-        <div class="p-5 -mt-16">
+        /> -->
+        <div class="p-5 -mt-6 content-start">
           <button
-            class="p-3 mb-7 ml-4 drop-shadow-xl bg-white rounded-full flex text-pink-500 hover:bg-white hover:drop-shadow-2xl active:drop-shadow-lg"
+            class="py-3 px-7 mb-8 ml-1 drop-shadow-md bg-white rounded-full flex text-pink-500 font-semibold hover:bg-white hover:drop-shadow-xl active:drop-shadow-lg"
           >
             Explore the world!
             <img src="../resources/pink-bag.svg" alt="Explore-bag" />
           </button>
-          <h1 class="text-7xl font-bold leading-tight">
-            Travel <span class="text-pink-500">top destination</span> <br />of
-            the world
+          <h1 class="text-7xl font-semibold leading-tight">
+            Travel
+            <span class="text-pink-400"
+              >top <br />
+              destination</span
+            >
+            <br />of the world
           </h1>
           <p class="text-slate-600 my-7 w-96">
             Where adventure meets comfort. We create unforgettable travel
@@ -64,7 +78,7 @@
           </p>
           <div class="flex items-start gap-3">
             <button
-              class="transition-all py-3 px-7 bg-violet-700 drop-shadow-2xl text-white font-semibold rounded-full hover:bg-violet-500 active:bg-violet-800 active:drop-shadow-xl"
+              class="transition-all py-3 px-7 bg-indigo-700 drop-shadow-2xl text-white font-semibold rounded-full hover:bg-indigo-500 active:bg-indigo-800 active:drop-shadow-xl"
             >
               Get Started
             </button>
@@ -82,37 +96,269 @@
         </div>
 
         <div class="hero-image">
-          <div class="">
-            <div class="">
-              <a
-                href="#"
-                class="absolute flex bg-white p-3 rounded-full shadow-xl active:shadow-lg text-sm bottom-40 ml-20"
-                ><img
-                  class="pr-2"
-                  src="../resources/location.svg"
-                  alt="location-logo"
-                />Top Places</a
-              >
-              <a
-                href="#"
-                class="absolute flex bg-white p-3 rounded-full shadow-xl active:shadow-lg text-sm bottom-24 right-56"
-                ><img
-                  class="pr-2"
-                  src="../resources/location.svg"
-                  alt="location-logo"
-                />Top Hotels</a
-              >
+          <a
+            href="#"
+            class="absolute flex bg-white py-3 px-6 rounded-full shadow-xl active:shadow-lg text-sm bottom-40 ml-6"
+            ><img
+              class="pr-2"
+              src="../resources/location.svg"
+              alt="location-logo"
+            />Top Places</a
+          >
+          <a
+            href="#"
+            class="absolute flex bg-white py-3 px-6 rounded-full shadow-xl active:shadow-lg text-sm bottom-24 right-56"
+            ><img
+              class="pr-2"
+              src="../resources/location.svg"
+              alt="location-logo"
+            />Top Hotels</a
+          >
+          <a
+            href="#"
+            class="absolute flex flex-col bg-white py-3 px-6 text-xs rounded-lg shadow-xl active:shadow-lg right-36 bottom-80"
+            ><div class="flex">
+              <img
+                class="pr-2"
+                src="../resources/network.svg"
+                alt="location-logo"
+              />
+              <span class="text-indigo-600 font-bold text-xl">5000+</span>
             </div>
+            Customers</a
+          >
+          <img
+            class="max-w-none mb-12 -ml-11 w-[800px]"
+            src="../resources/hero-section-main-img.svg"
+            alt=""
+          />
+        </div>
+        <img
+          class="absolute -bottom-1 right-0 w-[500px] -z-10"
+          src="../resources/earth.svg"
+          alt="earthsvg"
+        />
+      </div>
+    </header>
+
+    <!-- Brands -->
+    <section class="mx-28">
+      <div class="flex py-12 justify-evenly items-center">
+        <img src="../resources/brands/brand1.svg" alt="brand" />
+        <img src="../resources/brands/brand2.svg" alt="brand" />
+        <img src="../resources/brands/brand3.svg" alt="brand" />
+        <img src="../resources/brands/brand4.svg" alt="brand" />
+        <img src="../resources/brands/brand5.svg" alt="brand" />
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="mx-32">
+      <div class="flex gap-4 justify-center items-center">
+        <div class="p-6 pl-0 m-8 ml-0 flex flex-col gap-4">
+          <h4 class="text-pink-400 font-semibold">WHAT WE SERVE</h4>
+          <h1 class="text-4xl font-bold text-[#252B42]">Top Values For You</h1>
+          <p class="text-base text-slate-600">
+            Embrace life's vastness,<br />
+            venture forth,
+          </p>
+        </div>
+        <div class="p-6 m-6 flex flex-col gap-4 mt-8">
+          <img
+            class="w-20"
+            src="../resources/Features/feature1.svg"
+            alt="features"
+          />
+          <h2 class="text-2xl font-semibold text-[#252B42]">Lot of choices</h2>
+          <p class="text-base text-slate-600">
+            Embrace life's vastness, venture forth,
+          </p>
+        </div>
+        <div class="p-6 m-6 flex flex-col gap-4 mt-8">
+          <img
+            class="w-20"
+            src="../resources/Features/feature2.svg"
+            alt="features"
+          />
+          <h2 class="text-2xl font-semibold text-[#252B42]">Best Tour Guide</h2>
+          <p class="text-base text-slate-600">
+            Embrace life's vastness, venture forth,
+          </p>
+        </div>
+        <div class="p-6 m-6 mr-0 flex flex-col gap-4 mt-8">
+          <img
+            class="w-20"
+            src="../resources/Features/feature3.svg"
+            alt="features"
+          />
+          <h2 class="text-2xl font-semibold text-[#252B42]">Easy Booking</h2>
+          <p class="text-base text-slate-600">
+            Embrace life's vastness, venture forth,
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations -->
+    <section class="mx-32 my-14">
+      <!-- title part -->
+      <div class="flex justify-between items-center">
+        <!-- Title and Tagline -->
+        <div class="flex flex-col gap-3">
+          <h4 class="text-pink-400 font-semibold">
+            CHOOSE YOUR NEXT DESTINATION
+          </h4>
+          <h1 class="text-4xl font-semibold text-[#252B42]">
+            Explore top destination
+          </h1>
+        </div>
+        <!-- Arrow Buttons -->
+        <div class="flex gap-4">
+          <button>
+            <span
+              class="material-symbols-outlined bg-neutral-100 text-indigo-700 p-3 rounded-full drop-shadow-lg shadow-inner hover:bg-neutral-50 hover:drop-shadow-xl active:bg-neutral-200 active:drop-shadow-md"
+            >
+              arrow_back_ios_new
+            </span>
+          </button>
+          <button>
+            <span
+              class="material-symbols-outlined bg-indigo-700 text-white p-3 rounded-full drop-shadow-lg shadow-inner hover:bg-indigo-500 hover:drop-shadow-xl active:bg-indigo-800 active:drop-shadow-md"
+            >
+              arrow_forward_ios
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Destination card -->
+      <div class="">
+        <!-- Grid for cards -->
+        <div class="grid grid-cols-3 gap-4 my-16">
+          <div
+            class="p-4 flex flex-col gap-4 bg-zinc-50 backdrop-blur-2xl rounded-b-3xl"
+          >
             <img
-              class="max-w-none mb-12 mr-12"
-              src="../resources/hero-section-main-img.svg"
-              alt=""
-              width="690px"
-              height="690px"
+              class="absolute top-9 left-14 blur-[10px] brightness-200 rounded-3xl drop-shadow-2xl"
+              src="../resources/destinations/blur-backdrop.png"
+              alt="destination"
             />
+            <img
+              class="rounded-3xl drop-shadow-2xl"
+              src="../resources/destinations/destination1.png"
+              alt="destination"
+            />
+            <div class="px-4 flex flex-col gap-3">
+              <h1 class="font-bold text-2xl text-[#252B42] mt-1">Cappadocia</h1>
+              <p class="text-base text-slate-600">
+                Lorem Ipsum is simply dummy text of the printing and...see more
+              </p>
+              <div class="flex justify-between mt-4">
+                <div class="flex flex-col gap-1">
+                  <p class="text-sm text-slate-600">Macchu Picchu, Peru</p>
+                  <p class="text-sm text-neutral-400 font-semibold">
+                    <span class="text-black text-xl font-bold mr-2">$380</span>x
+                    12 interest free
+                  </p>
+                </div>
+                <button
+                  disabled
+                  class="absolute delay-75 px-3 my-2 blur-[30px] bottom-0 right-4 rounded-full text-white text-sm font-medium bg-indigo-500 drop-shadow-xl hover:bg-indigo-400 active:bg-indigo-600 active:drop-shadow-lg"
+                >
+                  See More
+                </button>
+                <button
+                  class="delay-75 px-3 my-2 rounded-full text-white text-sm font-medium bg-indigo-500 drop-shadow-xl hover:bg-indigo-400 active:bg-indigo-600 active:drop-shadow-lg"
+                >
+                  See More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-4 flex flex-col gap-4 bg-zinc-50 backdrop-blur-2xl rounded-b-3xl"
+          >
+            <img
+              class="absolute top-9 left-14 blur-[10px] brightness-200 rounded-3xl drop-shadow-2xl"
+              src="../resources/destinations/blur-backdrop.png"
+              alt="destination"
+            />
+            <img
+              class="rounded-3xl drop-shadow-2xl"
+              src="../resources/destinations/destination2.png"
+              alt="destination"
+            />
+            <div class="px-4 flex flex-col gap-3">
+              <h1 class="font-bold text-2xl text-[#252B42] mt-1">
+                Nice and Cannes
+              </h1>
+              <p class="text-base text-slate-600">
+                Lorem Ipsum is simply dummy text of the printing and...see more
+              </p>
+              <div class="flex justify-between mt-4">
+                <div class="flex flex-col gap-1">
+                  <p class="text-sm text-slate-600">French Riviera, France</p>
+                  <p class="text-sm text-neutral-400 font-semibold">
+                    <span class="text-black text-xl font-bold mr-2">$300</span>x
+                    12 interest free
+                  </p>
+                </div>
+                <button
+                  disabled
+                  class="absolute delay-75 px-3 my-2 blur-[30px] bottom-0 right-4 rounded-full text-white text-sm font-medium bg-indigo-500 drop-shadow-xl hover:bg-indigo-400 active:bg-indigo-600 active:drop-shadow-lg"
+                >
+                  See More
+                </button>
+                <button
+                  class="delay-75 px-3 my-2 rounded-full text-white text-sm font-medium bg-indigo-500 drop-shadow-xl hover:bg-indigo-400 active:bg-indigo-600 active:drop-shadow-lg"
+                >
+                  See More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-4 flex flex-col gap-4 bg-zinc-50 backdrop-blur-2xl rounded-b-3xl"
+          >
+            <img
+              class="absolute top-9 left-14 blur-[10px] brightness-200 rounded-3xl drop-shadow-2xl"
+              src="../resources/destinations/blur-backdrop.png"
+              alt="destination"
+            />
+            <img
+              class="rounded-3xl drop-shadow-2xl"
+              src="../resources/destinations/destination3.png"
+              alt="destination"
+            />
+            <div class="px-4 flex flex-col gap-3">
+              <h1 class="font-bold text-2xl text-[#252B42] mt-1">Seville</h1>
+              <p class="text-base text-slate-600">
+                Lorem Ipsum is simply dummy text of the printing and...see more
+              </p>
+              <div class="flex justify-between mt-4">
+                <div class="flex flex-col gap-1">
+                  <p class="text-sm text-slate-600">Seville, Spain</p>
+                  <p class="text-sm text-neutral-400 font-semibold">
+                    <span class="text-black text-xl font-bold mr-2">$200</span>x
+                    12 interest free
+                  </p>
+                </div>
+                <button
+                  disabled
+                  class="absolute delay-75 px-3 my-2 blur-[30px] bottom-0 right-4 rounded-full text-white text-sm font-medium bg-indigo-500 drop-shadow-xl hover:bg-indigo-400 active:bg-indigo-600 active:drop-shadow-lg"
+                >
+                  See More
+                </button>
+                <button
+                  class="delay-75 px-3 my-2 rounded-full text-white text-sm font-medium bg-indigo-500 drop-shadow-xl hover:bg-indigo-400 active:bg-indigo-600 active:drop-shadow-lg"
+                >
+                  See More
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </header>
+    </section>
   </body>
 </html>
