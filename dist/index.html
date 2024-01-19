@@ -18,9 +18,9 @@
     <title>Document</title>
   </head>
   <body class="font-poppins">
-    <nav class="bg-white border-gray-200">
+    <nav id="navbar" class="bg-white border-gray-200">
       <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6 lg:flex-nowrap 2xl:max-w-full 2xl:mx-32"
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6 lg:flex-nowrap 2xl:max-w-screen-2xl"
       >
         <a href="#">
           <img src="../resources/logo.svg" class="h-8 sm:h-10 xl:h-11" />
@@ -115,12 +115,14 @@
         </button>
       </div>
     </nav>
-    <section id="hero-section">
+
+    <!-- Hero Section -->
+    <section id="hero-section" class="relative">
       <div
-        class="container flex flex-col justify-center p-6 2xl:pl-0 mx-auto sm:py-12 lg:py-4 2xl:py-12 lg:flex-row lg:justify-between gap-4"
+        class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-4 2xl:py-12 lg:flex-row 2xl:justify-between gap-3 xl:gap-0"
       >
         <div
-          class="flex flex-col justify-center items-center p-6 2xl:pl-0 text-center md:px-10 lg:max-w-md xl:max-w-lg 2xl:max-w-2xl lg:text-left lg:items-start"
+          class="flex flex-col justify-center items-center p-6 2xl:pl-0 text-center md:px-10 lg:max-w-md xl:max-w-xl 2xl:max-w-2xl lg:text-left lg:items-start"
         >
           <button
             class="w-56 py-3 px-6 mb-8 flex 2xl:text-xl 2xl:w-64 justify-between items-center drop-shadow-md bg-white rounded-full text-pink-500 font-semibold hover:bg-white hover:drop-shadow-xl active:drop-shadow-lg"
@@ -143,15 +145,15 @@
           </p>
           <div class="flex items-start gap-3">
             <button
-              class="transition-all py-3 px-4 lg:py-4 lg:px-5 2xl:px-7 lg:text-lg bg-indigo-700 drop-shadow-2xl text-white font-semibold rounded-full hover:bg-indigo-500 active:bg-indigo-800 active:drop-shadow-xl"
+              class="transition-all py-3 px-3 text-sm lg:py-4 lg:px-5 2xl:px-7 lg:text-lg bg-indigo-700 drop-shadow-2xl text-white font-semibold rounded-full hover:bg-indigo-500 active:bg-indigo-800 active:drop-shadow-xl"
             >
               Get Started
             </button>
             <button
-              class="transition-all flex py-3 px-4 lg:py-4 lg:px-5 2xl:px-7 lg:text-lg rounded-full border border-slate-300 font-semibold hover:shadow-lg active:shadow-sm active:bg-slate-100"
+              class="transition-all flex py-3 px-3 text-sm lg:py-4 lg:px-5 2xl:px-7 lg:text-lg rounded-full border border-slate-300 font-semibold hover:shadow-lg active:shadow-sm active:bg-slate-100"
             >
               <img
-                class="mr-1"
+                class="mr-1 h-5 lg:h-auto"
                 src="../resources/play-btn-violet.svg"
                 alt="play-btn"
               />
@@ -161,7 +163,7 @@
         </div>
 
         <div
-          class="flex items-center justify-center p-6 mt-6 lg:mt-0 lg:h-[500px] lg:w-[600px] lg:p-0 xl:h-[550px]"
+          class="flex items-center justify-center p-6 mt-6 h-auto lg:mt-0 lg:h-[500px] lg:w-[600px] lg:p-0 xl:h-[550px]"
         >
           <!-- <a
             href="#"
@@ -195,92 +197,154 @@
             Customers</a
           > -->
           <img
-            class="max-w-[none] w-[430px] sm:w-[500px] md:w-[600px] lg:w-[600px] xl:w-[600px] 2xl:h-[650px] 2xl:w-auto 2xl:mt-16 lg:h-[650px]"
+            class="max-w-[none] w-[370px] sm:w-[500px] md:w-[600px] lg:w-[520px] xl:w-[600px] 2xl:h-[650px] 2xl:w-auto 2xl:mt-16 lg:h-[650px]"
             src="../resources/hero-section-main-img.svg"
             alt=""
           />
         </div>
-        <!-- <img
-          class="absolute -bottom-1 right-0 w-[500px] -z-10"
+        <img
+          class="absolute bottom-0 right-0 w-[500px] -z-10"
           src="../resources/earth.svg"
           alt="earthsvg"
-        /> -->
+        />
       </div>
     </section>
 
     <!-- Brands -->
-    <section class="flex items-center justify-center">
-      <div class="container flex py-12 justify-around items-center">
-        <img src="../resources/brands/brand1.svg" alt="brand" />
-        <img src="../resources/brands/brand2.svg" alt="brand" />
-        <img src="../resources/brands/brand3.svg" alt="brand" />
-        <img src="../resources/brands/brand4.svg" alt="brand" />
-        <img src="../resources/brands/brand5.svg" alt="brand" />
+    <section id="brands-section" class="flex items-start justify-evenly">
+      <div
+        class="container flex flex-wrap py-8 px-2 justify-around items-center"
+      >
+        <img
+          class="p-3 w-36 h-auto sm:w-auto hover:opacity-85"
+          src="../resources/brands/brand1.svg"
+          alt="brand"
+        />
+        <img
+          class="p-3 w-36 h-auto sm:w-auto hover:opacity-85"
+          src="../resources/brands/brand2.svg"
+          alt="brand"
+        />
+        <img
+          class="p-3 w-36 h-auto sm:w-auto hover:opacity-85"
+          src="../resources/brands/brand3.svg"
+          alt="brand"
+        />
+        <img
+          class="p-3 w-36 h-auto sm:w-auto hover:opacity-85"
+          src="../resources/brands/brand4.svg"
+          alt="brand"
+        />
+        <img
+          class="p-3 w-36 h-auto sm:w-auto hover:opacity-85"
+          src="../resources/brands/brand5.svg"
+          alt="brand"
+        />
       </div>
     </section>
 
     <!-- Features -->
-    <section class="mx-32">
-      <div class="container flex gap-4 justify-center items-center">
-        <div class="p-6 pl-0 m-8 ml-0 flex flex-col gap-4">
-          <h4 class="text-pink-400 font-semibold">WHAT WE SERVE</h4>
-          <h1 class="text-4xl font-bold text-[#252B42]">Top Values For You</h1>
-          <p class="text-base text-slate-600">
+    <section id="features-section" class="">
+      <div
+        class="container flex flex-col my-10 2xl:gap-20 justify-center items-center text-center lg:text-left mx-auto lg:flex-row"
+      >
+        <div
+          class="flex flex-col gap-4 p-6 mx-8 lg:text-left xl:ml-12 2xl:mx-0"
+        >
+          <h4 class="text-pink-400 text-lg font-semibold 2xl:text-xl">
+            WHAT WE SERVE
+          </h4>
+          <h1 class="text-4xl font-bold text-[#252B42] leading-snug 2xl:text5">
+            Top Values For You
+          </h1>
+          <p class="text-base text-slate-600 2xl:text-lg">
             Embrace life's vastness,<br />
             venture forth,
           </p>
         </div>
-        <div class="p-6 m-6 flex flex-col gap-4 mt-8">
-          <img
-            class="w-20"
-            src="../resources/Features/feature1.svg"
-            alt="features"
-          />
-          <h2 class="text-2xl font-semibold text-[#252B42]">Lot of choices</h2>
-          <p class="text-base text-slate-600">
-            Embrace life's vastness, venture forth,
-          </p>
-        </div>
-        <div class="p-6 m-6 flex flex-col gap-4 mt-8">
-          <img
-            class="w-20"
-            src="../resources/Features/feature2.svg"
-            alt="features"
-          />
-          <h2 class="text-2xl font-semibold text-[#252B42]">Best Tour Guide</h2>
-          <p class="text-base text-slate-600">
-            Embrace life's vastness, venture forth,
-          </p>
-        </div>
-        <div class="p-6 m-6 mr-0 flex flex-col gap-4 mt-8">
-          <img
-            class="w-20"
-            src="../resources/Features/feature3.svg"
-            alt="features"
-          />
-          <h2 class="text-2xl font-semibold text-[#252B42]">Easy Booking</h2>
-          <p class="text-base text-slate-600">
-            Embrace life's vastness, venture forth,
-          </p>
+        <div class="sm:flex sm:m-4 sm:py-12 lg:pb-0 lg:mb-0">
+          <div
+            class="flex flex-col items-center gap-5 p-6 mx-8 sm:p-2 sm:mx-2 lg:mx-4 lg:items-start 2xl:mx-8"
+          >
+            <img
+              class="w-24 sm:h-20 md:h-24"
+              src="../resources/Features/feature1.svg"
+              alt="features"
+            />
+            <h2
+              class="text-2xl font-semibold text-[#252B42] sm:text-xl md:text-2xl lg:text-xl xl:text-2xl"
+            >
+              Lot of choices
+            </h2>
+            <p
+              class="text-base sm:text-sm md:text-base text-slate-600 2xl:text-lg"
+            >
+              Embrace life's vastness, venture forth,
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-4 p-6 mx-8 sm:p-2 sm:mx-2 lg:mx-4 lg:items-start 2xl:mx-8"
+          >
+            <img
+              class="w-24 sm:h-20 md:h-24"
+              src="../resources/Features/feature2.svg"
+              alt="features"
+            />
+            <h2
+              class="text-2xl font-semibold text-[#252B42] sm:text-xl md:text-2xl lg:text-xl xl:text-2xl"
+            >
+              Best Tour Guide
+            </h2>
+            <p
+              class="text-base sm:text-sm md:text-base text-slate-600 2xl:text-lg"
+            >
+              Embrace life's vastness, venture forth,
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-4 p-6 mx-8 sm:p-2 sm:mx-2 lg:mx-4 lg:items-start 2xl:mx-8"
+          >
+            <img
+              class="w-24 sm:h-20 md:h-24"
+              src="../resources/Features/feature3.svg"
+              alt="features"
+            />
+            <h2
+              class="text-2xl font-semibold text-[#252B42] sm:text-xl md:text-2xl lg:text-xl xl:text-2xl"
+            >
+              Easy Booking
+            </h2>
+            <p
+              class="text-base sm:text-sm md:text-base text-slate-600 2xl:text-lg"
+            >
+              Embrace life's vastness, venture forth,
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Destinations -->
-    <section class="mx-32 my-14">
+    <section id="destination-section">
       <!-- title part -->
-      <div class="container flex justify-between items-center">
+      <div
+        class="container flex justify-center items-center text-center my-16 mx-auto lg:justify-between md:mx-auto"
+      >
         <!-- Title and Tagline -->
-        <div class="flex flex-col gap-3">
-          <h4 class="text-pink-400 font-semibold">
+        <div
+          class="flex flex-col p-3 gap-3 text-center lg:text-left lg:ml-12 xl:p-6 2xl:ml-0"
+        >
+          <h4 class="text-pink-400 text-lg font-semibold 2xl:text-xl">
             CHOOSE YOUR NEXT DESTINATION
           </h4>
-          <h1 class="text-4xl font-semibold text-[#252B42]">
+          <h1
+            class="text-4xl font-semibold text-[#252B42] leading-snug 2xl:text-5xl"
+          >
             Explore top destination
           </h1>
         </div>
         <!-- Arrow Buttons -->
-        <div class="flex gap-4">
+        <div class="hidden lg:flex gap-4 lg:mr-12">
           <button>
             <span
               class="material-symbols-outlined bg-neutral-100 text-indigo-700 p-3 rounded-full drop-shadow-lg shadow-inner hover:bg-neutral-50 hover:drop-shadow-xl active:bg-neutral-200 active:drop-shadow-md"
@@ -299,17 +363,24 @@
       </div>
 
       <!-- Destination card -->
-      <div class="container">
-        <!-- Grid for cards -->
-        <div class="grid grid-cols-3 gap-4 my-16">
+      <div class="container flex justify-center items-center mx-auto mb-20">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4 lg:mx-auto"
+        >
           <div
-            class="p-4 flex flex-col gap-4 bg-zinc-50 backdrop-blur-2xl rounded-3xl"
+            class="relative p-1 pb-4 m-4 flex flex-col gap-4 bg-zinc-50 hover:bg-zinc-100 backdrop-blur-2xl hover:backdrop-blur-3xl rounded-3xl shadow-lg"
           >
             <img
               class="rounded-3xl drop-shadow-2xl"
               src="../resources/destinations/destination1.png"
               alt="destination"
             />
+            <div
+              class="absolute right-4 top-5 flex bg-black bg-opacity-20 items-center w-fit px-2 py-1 rounded-full xl:text-xl xl:px-3"
+            >
+              <img class="mr-2" src="../resources/Star.svg" alt="star" />
+              <p class="text-white">5.0</p>
+            </div>
             <div class="px-4 flex flex-col gap-3">
               <h1 class="font-bold text-2xl text-[#252B42] mt-1">Cappadocia</h1>
               <p class="text-base text-slate-600">
@@ -319,18 +390,19 @@
                 <div class="flex flex-col gap-1">
                   <p class="text-sm text-slate-600">Macchu Picchu, Peru</p>
                   <p class="text-sm text-neutral-400 font-semibold">
-                    <span class="text-black text-xl font-bold mr-2">$380</span>x
-                    12 interest free
+                    <span class="text-black text-xl 2xl:text-2xl font-bold mr-2"
+                      >$380</span
+                    >x 12 interest free
                   </p>
                 </div>
                 <button
                   disabled
-                  class="absolute delay-75 px-3 my-2 blur-[30px] bottom-0 right-4 rounded-full text-white text-sm font-medium bg-indigo-500 drop-shadow-xl hover:bg-indigo-400 active:bg-indigo-600 active:drop-shadow-lg"
+                  class="absolute delay-75 px-3 my-2 blur-[30px] bottom-4 right-4 rounded-full text-white text-sm font-medium bg-indigo-500 drop-shadow-xl hover:bg-indigo-400 active:bg-indigo-600 active:drop-shadow-lg"
                 >
                   See More
                 </button>
                 <button
-                  class="delay-75 px-3 my-2 rounded-full text-white text-sm font-medium bg-indigo-500 drop-shadow-xl hover:bg-indigo-400 active:bg-indigo-600 active:drop-shadow-lg"
+                  class="delay-75 text-sm sm:text-base md:text-sm xl: px-5 py-2 m-2 md:px-4 md:py-2 lg:mx-0 lg:px-2 lg:py-0 xl:m-2 xl:py-3 xl:px-4 rounded-full text-white font-medium bg-indigo-500 drop-shadow-xl hover:bg-indigo-400 active:bg-indigo-600 active:drop-shadow-lg"
                 >
                   See More
                 </button>
@@ -338,13 +410,19 @@
             </div>
           </div>
           <div
-            class="p-4 flex flex-col gap-4 bg-zinc-50 backdrop-blur-2xl rounded-3xl"
+            class="relative p-1 pb-4 m-4 flex flex-col gap-4 bg-zinc-50 hover:bg-zinc-100 backdrop-blur-2xl rounded-3xl shadow-lg"
           >
             <img
               class="rounded-3xl drop-shadow-2xl"
               src="../resources/destinations/destination2.png"
               alt="destination"
             />
+            <div
+              class="absolute right-4 top-5 flex bg-black bg-opacity-20 items-center w-fit px-2 py-1 rounded-full xl:text-xl xl:px-3"
+            >
+              <img class="mr-2" src="../resources/Star.svg" alt="star" />
+              <p class="text-white">5.0</p>
+            </div>
             <div class="px-4 flex flex-col gap-3">
               <h1 class="font-bold text-2xl text-[#252B42] mt-1">
                 Nice and Cannes
@@ -356,8 +434,9 @@
                 <div class="flex flex-col gap-1">
                   <p class="text-sm text-slate-600">French Riviera, France</p>
                   <p class="text-sm text-neutral-400 font-semibold">
-                    <span class="text-black text-xl font-bold mr-2">$300</span>x
-                    12 interest free
+                    <span class="text-black text-xl 2xl:text-2xl font-bold mr-2"
+                      >$300</span
+                    >x 12 interest free
                   </p>
                 </div>
                 <button
@@ -367,7 +446,7 @@
                   See More
                 </button>
                 <button
-                  class="delay-75 px-3 my-2 rounded-full text-white text-sm font-medium bg-indigo-500 drop-shadow-xl hover:bg-indigo-400 active:bg-indigo-600 active:drop-shadow-lg"
+                  class="delay-75 text-sm sm:text-base md:text-sm xl: px-5 py-2 m-2 md:px-4 md:py-2 lg:mx-0 lg:px-2 lg:py-0 xl:m-2 xl:py-3 xl:px-4 rounded-full text-white font-medium bg-indigo-500 drop-shadow-xl hover:bg-indigo-400 active:bg-indigo-600 active:drop-shadow-lg"
                 >
                   See More
                 </button>
@@ -375,13 +454,19 @@
             </div>
           </div>
           <div
-            class="p-4 flex flex-col gap-4 bg-zinc-50 backdrop-blur-2xl rounded-3xl"
+            class="relative p-1 pb-4 m-4 flex flex-col gap-4 bg-zinc-50 hover:bg-zinc-100 backdrop-blur-2xl rounded-3xl shadow-lg"
           >
             <img
               class="rounded-3xl drop-shadow-2xl"
               src="../resources/destinations/destination3.png"
               alt="destination"
             />
+            <div
+              class="absolute right-4 top-5 flex bg-black bg-opacity-20 items-center w-fit px-2 py-1 rounded-full xl:text-xl xl:px-3"
+            >
+              <img class="mr-2" src="../resources/Star.svg" alt="star" />
+              <p class="text-white">5.0</p>
+            </div>
             <div class="px-4 flex flex-col gap-3">
               <h1 class="font-bold text-2xl text-[#252B42] mt-1">Seville</h1>
               <p class="text-base text-slate-600">
@@ -391,8 +476,9 @@
                 <div class="flex flex-col gap-1">
                   <p class="text-sm text-slate-600">Seville, Spain</p>
                   <p class="text-sm text-neutral-400 font-semibold">
-                    <span class="text-black text-xl font-bold mr-2">$200</span>x
-                    12 interest free
+                    <span class="text-black text-xl 2xl:text-2xl font-bold mr-2"
+                      >$200</span
+                    >x 12 interest free
                   </p>
                 </div>
                 <button
@@ -402,7 +488,7 @@
                   See More
                 </button>
                 <button
-                  class="delay-75 px-3 my-2 rounded-full text-white text-sm font-medium bg-indigo-500 drop-shadow-xl hover:bg-indigo-400 active:bg-indigo-600 active:drop-shadow-lg"
+                  class="delay-75 text-sm sm:text-base md:text-sm xl: px-5 py-2 m-2 md:px-4 md:py-2 lg:mx-0 lg:px-2 lg:py-0 xl:m-2 xl:py-3 xl:px-4 rounded-full text-white font-medium bg-indigo-500 drop-shadow-xl hover:bg-indigo-400 active:bg-indigo-600 active:drop-shadow-lg"
                 >
                   See More
                 </button>
