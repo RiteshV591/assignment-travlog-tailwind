@@ -4,8 +4,6 @@ let destinationCards = document.querySelector(".destination-cards");
 
 $(document).ready(function () {
   $(destinationCards).slick({
-    // autoplay: true,
-    // autoplaySpeed: 2000,
     dots: false,
     infinite: true,
     speed: 300,
@@ -41,9 +39,6 @@ $(document).ready(function () {
           autoplaySpeed: 2000,
         },
       },
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ],
   });
 });
